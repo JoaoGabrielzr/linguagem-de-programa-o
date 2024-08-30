@@ -1,0 +1,18 @@
+program EncontraImpares;
+
+var 
+  vetor: array[char] of integer;
+  i: char;
+begin
+
+  for i:= 'A' to 'E' do
+  readln(vetor[i]);
+  writeln('O tamamho do vetor na posicao A eh:', vetor['A']);
+  
+  for i:= 'A' to 'E' do
+  
+begin
+  if vetor[i] mod 2 = 1 then
+  writeln( 'Impar: ',vetor[i]);
+  end;
+end.
