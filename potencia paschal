@@ -1,0 +1,17 @@
+program Potencia;
+var
+  res, num, pot, i: integer;
+
+begin
+  res:= 1;
+  i:=0;
+  readln(num, pot);
+  while i < pot do 
+  begin
+  res:= res * num;
+  i:=i + 1;(*inc(i)*)
+  end;
+  
+  writeln('O resultado da potencia eh:',res);
+  
+end.
