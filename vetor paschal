@@ -1,0 +1,25 @@
+program SomaElementos;
+const
+  size = 10;
+  
+  type
+  arr = array [1..size] of integer;
+  function somaVetor(v: arr): integer;
+  var
+  soma: integer = 0;
+  i: integer;
+  begin
+  for i:= 1 to size do
+  soma:= soma + v[i];
+  somaVetor := soma;
+  end;
+  
+  var
+  vetor: arr;
+  i, res: integer;
+begin
+  for i:= 1 to size do
+  readln(vetor[i]);
+  res:= somaVetor(Vetor);
+  writeln('A soma dos elementos eh:', res);
+end.
